@@ -1,0 +1,25 @@
+
+
+.orderitemscontracts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+table {
+  width: 70vw;
+  border-radius: 10px;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 0;
+}
