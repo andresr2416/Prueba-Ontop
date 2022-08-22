@@ -94,8 +94,15 @@ button.buttonfilter {
     width: 85vw;
     padding: 20px;
     box-shadow: 0 0 11px 5px #bdbdbd;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
+
+  .mat-paginator-container {
+   
+    box-shadow: 1px 18px 15px 5px !important;
+}
+
+  
 
 
   ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
@@ -126,7 +133,23 @@ button.buttonfilter {
   justify-content: flex-start;
     padding-top: 3px;
 }
-  
+
+.chat {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.chat button {
+  margin-right: 10px;
+}
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+  background-color: #F25774 !important;
+  color: #ffffff;
+}
+
+
   
   @media(max-width: 860px) {
 	.mobile-label {
@@ -135,6 +158,15 @@ button.buttonfilter {
 		  font-weight: bold;
 	}
 
+  .chat button {
+   display: none;
+  }
+
+  
+.mat-paginator {
+   
+  display: none !important;
+}
 
   .orderitemscontracts {
     margin-bottom: 1.34375em;

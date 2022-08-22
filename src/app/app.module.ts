@@ -35,7 +35,7 @@ import { NgbCollapse, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    NgbModule 
+    NgbModule
     
   ],
   providers: [MatDatepickerModule,

@@ -69,7 +69,8 @@ const materialModules = [
   MatDatepickerModule,
   MatTooltipModule,
   MatProgressBarModule,
-  MatDialogModule
+  MatDialogModule,
+  
 ];
 
 @NgModule({
