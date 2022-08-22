@@ -41,6 +41,6 @@ import { NgbCollapse, NgbModule } from '@ng-bootstrap/ng-bootstrap';
   providers: [MatDatepickerModule,
   NgbCollapse],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA,]
 })
 export class AppModule { }

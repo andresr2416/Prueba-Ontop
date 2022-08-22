@@ -1,168 +1,198 @@
 <div class="main-wrapper  orderitemscontracts">
 
 
-    <mat-card>
+    <h1 class=" animate__animated animate__fadeInDown animate__delay-0.2s">Contracts For Andres Rueda</h1>
 
 
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row">
-                <div class="col-md-8 col-sm-12 col-xs-12 orderitemscontracts">
-                    <mat-form-field class="example-full-width">
-                        <span matPrefix> </span>
-                        <mat-label>Buscar</mat-label>
-                        <input matInput (keyup)="filtrar($event)" placeholder="Buscar">
-                        <button matSuffix mat-button>
-                            <mat-icon>search</mat-icon>
-                        </button>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 orderitemscontracts ">
+                <mat-form-field class="example-full-width animate__animated animate__fadeInLeft animate__delay-0.4s"
+                    appearance="outline">
+                    <span matPrefix> </span>
+                    <mat-label>Search</mat-label>
+                    <input matInput (keyup)="filtrar($event)">
+                    <mat-icon matSuffix>search</mat-icon>
 
-                    </mat-form-field>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 orderitemscontracts">
-                    <button mat-button class="example-full-width">
-                        <mat-icon>tune</mat-icon>
-                        <span>Filter</span>
-                    </button>
-                </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 orderitemscontracts">
-                    <button mat-button class="example-full-width buttonhire">
-                        <mat-icon>add</mat-icon>
-                        <span>New Hire</span>
-                    </button>
-                </div>
+
+                </mat-form-field>
             </div>
-
+            <div class="col-md-2 col-sm-4 col-xs-4 orderitemscontracts highButton">
+                <button mat-button
+                    class="example-full-width buttonfilter  animate__animated animate__fadeInRight animate__delay-0.6s">
+                    <mat-icon>tune</mat-icon>
+                    <span>Filter</span>
+                </button>
+            </div>
+            <div class="col-md-4 col-sm-8 col-xs-8 orderitemscontracts  highButton">
+                <button mat-button
+                    class="example-full-width buttonhire  animate__animated animate__fadeInRight animate__delay-0.6s">
+                    <mat-icon>add</mat-icon>
+                    <span>New Hire</span>
+                </button>
+            </div>
         </div>
 
-        <div class="container">
+    </div>
 
-            <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Enter a date range</mat-label>
-                        <mat-date-range-input [rangePicker]="picker">
-                            <input matStartDate placeholder="Start date">
-                            <input matEndDate placeholder="End date">
-                        </mat-date-range-input>
+    <div class="container">
 
-                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                        <mat-date-range-picker #picker></mat-date-range-picker>
-                    </mat-form-field>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Contract Type</mat-label>
-                        <mat-select [formControl]="contractype">
-                            <mat-option *ngFor="let contractype of contractTypeList" [value]="contractype">
-                                {{contractype}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
 
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
+                <mat-form-field
+                    class="example-full-width font-weight-bold animate__animated animate__fadeInUp animate__delay-1s"
+                    appearance="outline">
 
-                    <mat-form-field class="example-full-width">
-
-                        <mat-label>Contractor name</mat-label>
-                        <input matInput (keyup)="filtrar($event)">
+                    <mat-label>Contractor name</mat-label>
+                    <input matInput (keyup)="filtrar($event)">
 
 
-                    </mat-form-field>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
+                </mat-form-field>
 
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Status</mat-label>
-                        <mat-select [formControl]="status">
-                            <mat-option *ngFor="let status of statusList" [value]="status">
-                                {{status}}</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-
-                </div>
             </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <mat-form-field class="example-full-width animate__animated animate__fadeInUp animate__delay-1s"
+                    appearance="outline">
+                    <mat-label>Contract Type</mat-label>
+                    <mat-select [formControl]="contractype">
+                        <mat-option *ngFor="let contractype of contractTypeList" [value]="contractype">
 
+                            {{contractype}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <mat-form-field appearance="outline"
+                    class="example-full-width animate__animated animate__fadeInUp animate__delay-1s">
+                    <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+                    <mat-label>Create on</mat-label>
+                    <mat-date-range-input [rangePicker]="picker">
+                        <input matStartDate placeholder="Start date">
+                        <input matEndDate placeholder="End date">
+                    </mat-date-range-input>
+
+
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                </mat-form-field>
+
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+
+                <mat-form-field class="example-full-width animate__animated animate__fadeInUp animate__delay-1s"
+                    appearance="outline">
+                    <mat-label>Status</mat-label>
+                    <mat-select [formControl]="status">
+                        <mat-option *ngFor="let status of statusList" [value]="status">
+                            {{status}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
         </div>
 
+    </div>
 
-        <table wt-responsive-table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
-            class="mat-elevation-z8">
 
-            <!-- Name Column -->
-            <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">
-                    Contractor Name
-                </th>
-                <td mat-cell *matCellDef="let element">
+    <mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">
+                Contractor Name
+            </mat-header-cell>
+            <mat-card>
+
+                <mat-cell *matCellDef="let element">
+                    <span class="mobile-label">Contractor Name</span>
                     <img mat-card-avatar class="example-header-image" alt="">
                     {{element.name}}
-                </td>
-            </ng-container>
+                </mat-cell>
+            </mat-card>
+        </ng-container>
 
-            <!-- Type Column -->
-            <ng-container matColumnDef="type">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by type">
-                    Type
-                </th>
-                <td mat-cell *matCellDef="let element"> {{element.type}} </td>
-            </ng-container>
+        <!-- Type Column -->
+        <ng-container matColumnDef="type">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by type">
+                Type
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <span class="mobile-label">Type</span>
+                {{element.type}}
+            </mat-cell>
+        </ng-container>
 
-            <!-- Date  Column -->
-            <ng-container matColumnDef="startDate">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by startDate">
-                    Start Date
-                </th>
-                <td mat-cell *matCellDef="let element"> {{element.startDate}} </td>
-            </ng-container>
+        <!-- Date  Column -->
+        <ng-container matColumnDef="startDate">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by startDate">
+                Start Date
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <span class="mobile-label">Start Date</span>
+                {{element.startDate}}
+            </mat-cell>
+        </ng-container>
 
-            <!-- Amount Column -->
-            <ng-container matColumnDef="amount">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by amount">
-                    Amount
-                </th>
-                <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
-            </ng-container>
+        <!-- Amount Column -->
+        <ng-container matColumnDef="amount">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by amount">
+                Amount
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <span class="mobile-label">Amount</span>
+                {{element.amount}}
+            </mat-cell>
+        </ng-container>
 
-            <!-- Status Column -->
-            <ng-container matColumnDef="status">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by status">
-                    Status
-                </th>
-                <td mat-cell *matCellDef="let element"> {{element.status}} </td>
-            </ng-container>
+        <!-- Status Column -->
+        <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by status">
+                Status
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <span class="mobile-label">Status</span>
+                {{element.status}}
+            </mat-cell>
+        </ng-container>
 
-            <!-- Actions Column -->
-            <ng-container matColumnDef="Actions">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by status">
-                    Actions
-                </th>
-                <td mat-cell *matCellDef="let element">
+        <!-- Actions Column -->
+        <ng-container matColumnDef="Actions">
+            <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by status">
+                Actions
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <span class="mobile-label">Actions</span>
 
-                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                        <mat-icon>more_vert</mat-icon>
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button wia menu">
+                    <mat-icon class="dots">more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>edit_document</mat-icon>
+                        <span>Edit</span>
                     </button>
-                    <mat-menu #menu="matMenu">
-                        <button mat-menu-item>
-                            <mat-icon>edit_document</mat-icon>
-                            <span>Edit</span>
-                        </button>
-                        <button mat-menu-item disabled>
-                            <mat-icon>voicemail</mat-icon>
-                            <span>Check voice mail</span>
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>notifications_off</mat-icon>
-                            <span>Disable alerts</span>
-                        </button>
-                    </mat-menu>
+                    <button mat-menu-item>
+                        <mat-icon>draw</mat-icon>
+                        <span>Sign</span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>article</mat-icon>
+                        <span>View Summary</span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>delete</mat-icon>
+                        <span>Delete</span>
+                    </button>
+                </mat-menu>
 
-                </td>
-            </ng-container>
+            </mat-cell>
+        </ng-container>
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
 
-    </mat-card>
 </div>

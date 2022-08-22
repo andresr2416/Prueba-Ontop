@@ -5,15 +5,41 @@
     justify-content: center;
     align-items: center;
     flex-direction:column;
-}
-table {
-  width: 70vw;
-  border-radius: 10px;
+
 }
 
-th.mat-sort-header-sorted {
-  color: black;
+
+button.buttonhire {
+	background-color: #F25774 !important;
+	color: #fff !important;
 }
+
+
+button.buttonfilter {
+	background-color: #EBEBEB !important;
+	color: #000 !important;
+}
+
+
+
+
+.mat-header-cell {
+  color: #000;
+  font-size: initial;
+  font-weight: bold;
+
+}
+.mat-cell {
+ 
+  font-weight: 500;
+
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
@@ -22,4 +48,155 @@ th.mat-sort-header-sorted {
   width: 40px;
   border-radius: 20px;
   border: 0;
+  margin: 1px 5px;
 }
+
+
+.mat-sort-header-content {
+
+	font-size: .9vw !important;
+	color: black !important;
+	font-weight: bold !important;
+  }
+
+  .main-wrapper .mat-card {
+    padding: 25px 45px 25px;
+  }
+
+
+
+  mat-header-cell, mat-cell {
+    padding: 15px !important;
+ 
+}
+.mat-table {
+	
+	max-height: 500px;
+  }
+
+  
+  .mobile-label {
+	display: none;
+  }
+
+  .mat-row {
+    margin: 0 0 20px 0;
+    border: none;
+    background: #f5f5f5;
+
+  }
+
+  .mat-header-row {
+	  border: none;
+	}
+
+  .mat-table {
+    width: 85vw;
+    padding: 20px;
+    box-shadow: 0 0 11px 5px #bdbdbd;
+    border-radius: 10px;
+  }
+
+
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #F25774 !important;
+  }
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused  .mat-form-field-outline-thick{
+    color: #F25774;
+  }
+  ::ng-deep .mat-form-field-appearance-outline  .mat-form-field-outline-thick{
+    color: #F25774;
+  }
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
+    color: #F25774;
+  }
+  ::ng-deep .mat-form-field.mat-focused .mat-input-element {
+    color: #F25774;
+    
+  }
+
+  ::ng-deep
+  .mat-form-field.mat-form-field-invalid
+  .mat-form-field-label
+  .mat-form-field-required-marker {
+    color: #F25774;
+}
+
+.highButton {
+  justify-content: flex-start;
+    padding-top: 3px;
+}
+  
+  
+  @media(max-width: 860px) {
+	.mobile-label {
+	  width: 50%;
+	  display: inline-block;
+		  font-weight: bold;
+	}
+
+
+  .orderitemscontracts {
+    margin-bottom: 1.34375em;
+
+}
+
+  .mat-table {
+    
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+  }
+
+	.mat-card{
+		
+		padding: 20px 30px 25px !important;
+		overflow: auto;
+		margin: 40px 0;
+	}
+  
+	.mat-header-row {
+	  display: none;
+	}
+  
+	.mat-row { 
+	  flex-direction: column;
+	  align-items: start;
+	  padding: 8px 24px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #c9c9c9;
+    background: none;
+	}
+
+  .mat-row:nth-child(even)
+  {
+    background: #f5f5f5;
+  }
+
+  .mat-row:nth-child(odd)
+  {
+    background: #fff;
+  }
+
+  .main-wrapper {
+    height: 100%;
+    margin: 15vh 0;
+  }
+  
+  
+
+  .mat-cell {
+    width: 100%;
+  }
+
+  .dots {
+    transform: rotate(90deg);
+  }
+
+
+
+  }
+  
+

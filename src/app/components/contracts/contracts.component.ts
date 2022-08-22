@@ -5,7 +5,7 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 
-export class PeriodicElement {
+export class Contracts {
  
   public name: string;
   public type: string;
@@ -15,10 +15,10 @@ export class PeriodicElement {
   
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'Darlene Robertson', type: 'Traditional', startDate: 'mar 4, 2021', amount: '$200 USD', status:'active'},
-  {name: 'Darlene Robertson', type: 'Traditional', startDate: 'mar 4, 2021', amount: '$200 USD', status:'active'},
-  {name: 'Darlene Robertson', type: 'Traditional', startDate: 'mar 4, 2021', amount: '$200 USD', status:'signature pending'},
+const ELEMENT_DATA: Contracts[] = [
+  {name: 'Darlene Robertson', type: 'Traditional', startDate: 'mar 4, 2021', amount: '$300 USD', status:'active'},
+  {name: 'Andres Rueda', type: 'Normal', startDate: 'mar 4, 2021', amount: '$200 USD', status:'Inactive'},
+  {name: 'Felipe Giraldo', type: 'Common', startDate: 'mar 4, 2021', amount: '$250 USD', status:'signature pending'},
 
 ];
 
